@@ -1,0 +1,54 @@
+body {
+    background-image: url(bg-palm.jpg);
+    background-size: cover;
+    font-family: 'Gill Sans MT';
+}
+
+.flex-c {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex-r {
+    display: flex;
+    flex-direction: row;
+}
+
+.elemento {
+    margin: 2.5rem;
+}
+
+.contenedor {
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+}
+
+.caja {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    height: 42px;
+    width: 400px;
+    border-radius: 20px;
+    background-color: white;
+    margin: 10px;
+    padding-left: 15px;
+}
+
+.caja:hover {
+    transform:translateY(4px)
+}
+
+.caja-texto {
+    margin-left: 9rem;
+}
+
+svg:hover {
+    transform: scale(1.2)
+}
+
+img:hover {
+    transform: scale(1.1)
+}
