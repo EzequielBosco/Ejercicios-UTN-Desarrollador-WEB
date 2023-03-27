@@ -78,10 +78,12 @@
     <hr>
     <div>
         <h2>Crea una lista de personas</h2>
-        <input type="number" id="cantidad" placeholder="Ingrese la cantidad de personas a ingresar">
-        <input type="text" id="persona" placeholder="Ingrese un nombre">
-        <button id="mostrar-lista" onclick="listaPersonas()">Mostrar</button>
-        <ul id="lista"></ul>
+        <label>Ingrese un Nombre:</label>
+        <input type="text" id="persona" value="Ingrese un nombre">
+        <button onclick="agregarPersona()">Agregar</button>
+        <ul id="lista-personas">
+
+        </ul>
     </div>
     <script src="ejercicios.js"></script>
 </body>

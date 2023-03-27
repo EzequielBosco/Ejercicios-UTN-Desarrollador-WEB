@@ -191,3 +191,8 @@ adivinarNumero()
 
 /* 14. Dado un input y un botón, escribir nombres de personas e ir mostrando en una lista
 desordenada a medida que se agregan. */
+
+function agregarPersona(){
+    let persona = document.getElementById("persona").value
+    document.getElementById("lista-personas").innerHTML += "<li>" + persona;
+}

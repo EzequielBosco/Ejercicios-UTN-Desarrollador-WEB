@@ -37,16 +37,17 @@ body {
     padding-left: 15px;
 }
 
-.caja:hover {
-    transform:translateY(4px)
-}
-
 .caja-texto {
     margin-left: 9rem;
 }
 
+.caja:hover {
+    transform:translateY(4px) 
+}
+
 svg:hover {
-    transform: scale(1.2)
+    transform: scale(1.2);
+    cursor: pointer; 
 }
 
 img:hover {
