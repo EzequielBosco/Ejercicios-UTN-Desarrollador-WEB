@@ -1,0 +1,86 @@
+body {
+    background-color: #22193F;
+    font-family: 'Nunito', sans-serif;
+    background-position: bottom;
+}
+
+i {
+    color: #6A2A83;
+}
+
+a {
+    color: #E21982;
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+button {
+    background-color: #E21982;
+    color: white;
+    font-size: 16px;
+    border: transparent;
+    border-radius: 20px;
+    width: 335px;
+    height: 35px;
+}
+
+input {
+    border: solid 1px #C4C4C4;
+    border-radius: 20px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    width: 335px;
+    height: 35px;
+}
+
+h1 {
+    font-size: 28px;
+    font-family: 'Nunito', sans-serif;
+}
+
+#imagen {
+    background-image: url(img-login.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 400px;
+    width: 400px;
+}
+
+#logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.caja {
+    background-color: white;
+    height: 390px;
+    width: 390px;
+}
+
+.imagen-fondo {
+    min-height: calc(100vh - 200px);
+    background-image: url("ondas.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        margin-bottom: 5rem;
+    }
+}
+
+@media (min-width: 1025px) { 
+    .container {
+        margin-bottom: 10rem;
+    }
+}
