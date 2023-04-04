@@ -15,7 +15,8 @@ a {
 }
 
 a:hover {
-    color:#6A2A83
+    color:#6A2A83;
+    cursor: pointer;
 }
 
 button {
@@ -26,6 +27,11 @@ button {
     border-radius: 20px;
     width: 335px;
     height: 35px;
+}
+
+button:hover {
+    transform: scale(1.02);
+    color: black;
 }
 
 input {
@@ -39,7 +45,7 @@ input {
 }
 
 input:hover {
-    background-color:#6a2a834b;
+    background-color:#6a2a833f;
     color: #6A2A83(143, 12, 34);
 }
 
