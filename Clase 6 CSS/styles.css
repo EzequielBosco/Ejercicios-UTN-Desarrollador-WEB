@@ -1,7 +1,10 @@
 body {
     background-image: url(bg-palm.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
     font-family: 'Gill Sans MT';
+    min-height: calc(100vh - 5.5rem);
 }
 
 .flex-c {
@@ -13,6 +16,7 @@ body {
 .flex-r {
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 .elemento {
@@ -42,14 +46,27 @@ body {
 }
 
 .caja:hover {
-    transform:translateY(4px) 
+    transform:translateY(-3px) 
 }
 
 svg:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     cursor: pointer; 
 }
 
-img:hover {
-    transform: scale(1.1)
+.img img {
+    transition: 0.2s ease-in-out;
+}
+
+.img img:hover {
+    transform: scale(1.1);
+}
+
+footer p {
+    font-size: 18px;
+}
+
+footer a:hover {
+    transform:scale(1.02);
+    color: rgb(15, 15, 15);
 }
