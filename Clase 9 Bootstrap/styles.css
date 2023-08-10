@@ -6,6 +6,7 @@ body {
 
 i {
     color: #6A2A83;
+    cursor: default;
 }
 
 a {
@@ -27,11 +28,12 @@ button {
     border-radius: 20px;
     width: 335px;
     height: 35px;
+    transition: 0.2s ease-in;
 }
 
 button:hover {
     transform: scale(1.02);
-    color: black;
+    color: #65297c(143, 12, 34);
 }
 
 input {
@@ -109,6 +111,20 @@ h1 {
     right: 19rem;
     user-select: none;
     cursor: pointer;
+}
+
+footer p {
+    font-size: 18px;
+    color: white;
+}
+
+footer a {
+    color: #6A2A83(143, 12, 34);
+    font-size: 19px;
+}
+
+footer a:hover {
+    color: #e21981c4;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
