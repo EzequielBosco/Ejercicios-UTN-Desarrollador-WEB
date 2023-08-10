@@ -3,6 +3,12 @@
     --color-gray:#E8E8E8;
     --blue-bold:#22193F;
 }
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
 nav{
     display: flex;
     align-items: center;
@@ -10,6 +16,7 @@ nav{
     padding: 2rem 0;
     border-bottom: 1px solid gray;
 }
+
 .nav-anclas a{
     margin-right: 2rem;
     text-decoration: none;
@@ -18,6 +25,7 @@ nav{
     font-family: 'Nunito',sans-serif;
     font-weight: 900;
 }
+
 .btn-primary-mio{
     border: none;
     color: white;
@@ -27,29 +35,35 @@ nav{
     font-family: 'Nunito',sans-serif;
     font-weight: 900;
 }
+
 .centrar{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
+
 .title-primer-banner{
     font-size: 40px;
     font-family: 'Nunito',sans-serif;
     font-weight: 700;
     color: white;
 }
+
 .title-mio{
     font-family: 'Nunito',sans-serif;
     font-weight: 700;
     font-size: 28px;
+    margin: 25px;
 }
+
 .pre-title{
     color: var(--btn-color-pink);
-    font-size: 12px;
+    font-size: 14px;
     font-family: 'Nunito',sans-serif;
     font-weight: 200;
 }
+
 .texto-general-principal{
     color: white;
     font-family: 'Open Sans', sans-serif;
@@ -57,27 +71,33 @@ nav{
     font-size: 16px;
     opacity: 0.9;
 }
+
 .texto-general{
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 16px;
     color: var(--blue-bold);
 }
+
 header{
     background-image: url(./banner-principal.jpg);
     height: 600px;
 }
+
 #quienes-somos{
     height: 300px;
     background-color: var(--color-gray);
     color: var(--blue-bold);
 }
+
 #como-funciona{
     padding: 4rem 0 0;
 }
+
 .container-como-funciona{
     display: flex;
 }
+
 .list-como-funciona{
     display: flex;
     flex-direction: column;
@@ -85,6 +105,7 @@ header{
     text-align: center;
     padding: 3rem;
 }
+
 .span-list{
     color: var(--btn-color-pink);
     font-weight: 900;
@@ -92,60 +113,71 @@ header{
     font-family: 'Open Sans', sans-serif;
     font-weight: 900;
 }
+
 .container-div-pink{
     background-color: var(--btn-color-pink);
     color: white;
-    width: 100vw;
+    width: 100%;
     font-size: 23px;
     text-align: center;
     padding: 1rem;
 }
+
 .container-div-pink p{
     margin: 0;
 }
+
 .container-div-pink button{
     border: 1px solid white;
     margin-left: 2rem;
     border-radius: 40px;
 }
+
 #faqs{
     padding: 3rem;
 }
+
 #faqs img{
     height: 250px;
     margin: 2rem;
 }
+
 .container-preguntas{
     display: flex;
     margin: 2rem;
 }
+
 .segundo-banner{
     background-image: url(./banner-secundario.jpg);
     height: 350px;
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     color: white;
 }
-footer {
-    margin: 15px
+
+.preguntas-f {
+    margin-left: 9rem;
 }
+
 .container-footer-violeta{
     background-color: var(--blue-bold);
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     color: white;
-
+    padding-bottom: 10px;
 }
+
 .container-footer-violeta a{
     text-decoration: none;
     color: white;
     padding: 1rem;
 }
+
 .container-links-footer{
     display: flex;
     justify-content: space-between;
@@ -156,12 +188,41 @@ footer {
 .span-footer{
     margin-top: 1rem;
 }
+
 i{
     margin: .2rem;
 }
+
 .accordion-button {
     background-color: white;
     border: solid 0.7px rgb(219, 219, 219);
     width: 400px;
     padding-left: 15px;
+}
+
+button {
+    transition: 0.2s ease-in;
+}
+
+button:hover {
+    color: var(--btn-color-pink);
+    background-color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 900) {
+    .preguntas-f {
+        margin-left: 0;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 655px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .preguntas-f {
+        margin-left: 0;
+        align-items: center;
+    }
 }
